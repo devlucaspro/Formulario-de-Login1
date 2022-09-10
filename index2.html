@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+
+    <style type="text/css">
+
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Poppins:ital,wght@1,300&family=Righteous&family=Sarala:wght@400;700&display=swap');
+        body{
+            background-color: #2d2d2d;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        .principal{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin-top: 150px;
+        }
+        .left{
+            width: 34%;
+            border: none;
+            background-color: #a1a1a1;
+        }
+        .right{
+            width: 34%;
+            border: none;
+            background-color: #091540;
+        }
+        .right-content{
+            display: block;
+            text-align: center;
+            margin: 30px 0px;
+        }
+        .right-content input{
+            margin-bottom: 14px;
+            outline: none;
+            border: none;
+            border-radius: 16px;
+            background-color: #a1a1a1;
+            padding: 14px;
+        }
+        .right-content input::placeholder{
+            color: black;
+        }
+        .right-content h3{
+            color: #fff;
+            font-family: 'Noto Sans', sans-serif;
+            font-size: 22px;
+        }
+        .box label{
+            font-family: 'Poppins', sans-serif;
+            font-size: 14px;
+            color: #fff;
+        }
+        .left-content h2{
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+            margin-bottom: -10px;
+            position: relative;
+            top: 30px;
+        }
+        .left-content p{
+            text-align: center;
+            font-family: 'Noto Sans', sans-serif;
+            position: relative;
+            top: 30px;
+        }
+        .left-content button{
+            margin-left: 50%;
+            margin-top: 70px;
+            transform: translate(-50%);
+            border: none;
+            border-radius: 18px;
+            background-color: #091540;
+            color: #f8f7f9;
+            padding: 10px;
+            font-size: 20px;
+            width: 55%;
+            font-family: 'Poppins', sans-serif;
+            cursor: pointer;
+            transition: 0.8s;
+        }
+        .left-content button:hover{
+            color: #a1a1a1;
+            background-color: #0c1d58;
+        }
+        footer{
+            background-color: #f8f7f9;
+            margin-top: 150px;
+        }
+        header p{
+            color: #f8f7f9;
+            position: fixed;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%);
+            font-family: 'Poppins', sans-serif;
+            font-size: 18px;
+            margin-top: 30px;
+            cursor: pointer;
+            transition: 0.8s;
+        }
+        header p:hover{
+            color: #a1a1a1;
+            font-size: 22px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <header>
+        <p>Blog.com</p>
+    </header>
+    
+    <div class="principal">
+        <div class="left">
+            <div class="left-content">
+                <h2>Junte-se a nossa Comunidade!</h2>
+                <p>Faça seu cadastro:</p>
+                <a href="#"><button>Cadastre-se</button></a>
+            </div>
+        </div>
+        <div class="right">
+            <div class="right-content">
+                <h3>Login</h3>
+                <input type="text" placeholder="Nome de Usúario..."><br>
+                <input type="email" placeholder="Seu e-mail..."><br>
+                <input type="password" placeholder="Sua senha..."><br>
+                <div class="box">
+                    <input type="checkbox" id="check">
+                    <label for="check">Li e concordo com os Termos.</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <br><br><br><br><br>
+    </footer>
+
+</body>
+</html>
